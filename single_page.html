@@ -7,20 +7,20 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__background"></div>
+    <div class="header_background"></div>
   </header>
 
   <nav class="navigation">
     <div class="container navigation-container">
-      <ul class="navigation_menu">
+      <ul class="navigation__menu">
         <li class="navigation__item  navigation__item_home">
           <a class="navigation__link  navigation__link_home" href="">Home</a>
         </li>
         <li class="navigation__item navigation__item_about">
           <a class="navigation__link  navigation__link_about" href="">About</a>
         </li>
-        <li class="navigation__item logo">
-          <svg width="225px" height="225px" >
+        <li class="navigation__item navigation__item_logo">
+          <svg class="logo-image" width="225px" height="225px" >
             <!-- Background -->
             <circle r="105" cx="50%" cy="50%" fill="#ffffff"/>
             <circle r="97" cx="50%" cy="50%" fill="#3eb3a5"/>
@@ -88,10 +88,10 @@
 
           <ul class="navigation__submenu">
             <li class="navigation__submenu_cat">
-              <a class="navigation__submenu_cat-link" href="" >Diary</a>
+              <a class="navigation__submenu_link" href="" >Diary</a>
             </li>
             <li class="navigation__submenu_cat">
-              <a class="navigation__submenu_cat-link" href="" >Personal</a>
+              <a class="navigation__submenu_link" href="" >Personal</a>
             </li>
           </ul>
         </li>
@@ -100,17 +100,17 @@
         </li>
       </ul>
     </div>
-    <div class="grey-line"></div>
+    <div class="navigation__grey-line"></div>
   </nav>
 
 <!-- End of navigation -->
 
 <!-- Start of post -->
 
-  <main class="main-block">
+  <main class="mainBlock">
     <div class="container">
-      <div class="single-post">
-        <div class="single-post__content-wrapp">
+      <div class="singlePost">
+        <div class="singlePost__content-wrapper">
           <div class="post__content_left">
             <div class="post__date">
               <span class="post__date_text">31 Jul</span>
@@ -157,35 +157,35 @@
                  sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.
             </p>
-            <div class="single-post_photo">
-              <img class="single-post_image" src="src/img/Post_photo.png"/>
+            <div class="singlePost__photo">
+              <img class="singlePost__image" src="src/img/Post_photo.png"/>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="story-comments">
-        <div class="story-comments__header">
-          <div class="story-comments__header_quantity">
-            <span class="story-comments__header_span-quantity">21 Comments</span>
+      <div class="storyComments">
+        <div class="storyComments__header">
+          <div class="storyComments__header_quantity">
+            <span class="storyComments__header_span-quantity">21 Comments</span>
           </div>
-          <div class="story-comments__header_next-story">
+          <div class="storyComments__header_next-story">
             <button class="next-stories__button">Next stories &gt;</button>
           </div>
         </div>
 
-        <div class="story-comments__wrapp">
+        <div class="storyComments_wrapp">
 
 <!-- First comment -->
 
-          <div class="story-comments__single-comment">
-            <div class="story-comments__single-comment_left">
-                <img class="story-comments__single-comment_avatar  avatar" src="src/img/svg/girl.svg"/>
+          <div class="singleComment">
+            <div class="singleComment__left">
+                <img class="singleComment__avatar  avatar" src="src/img/svg/girl.svg"/>
             </div>
 
-            <div class="story-comments__single-comment_right">
-              <div class="story-comments__single-comment_name">Olivia Williams</div>
-              <div class="story-comments__single-comment_text">
+            <div class="singleComment__right">
+              <div class="singleComment__name">Olivia Williams</div>
+              <div class="singleComment__text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna
                   aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -196,8 +196,8 @@
                   deserunt mollit anim id est laborum.
                 </p>
               </div>
-              <div class="story-comments__single-comment_reply">
-                <a class="reply-link" href="">Reply</a>
+              <div class="singleComment__reply">
+                <a class="singleComment__reply_link" href="">Reply</a>
               </div>
             </div>
 
@@ -205,14 +205,14 @@
 
 <!-- Second comment -->
 
-          <div class="story-comments__single-comment">
-            <div class="story-comments__single-comment_left">
-                <img class="story-comments__single-comment_avatar avatar" src="src/img/svg/man.svg"/>
+          <div class="singleComment">
+            <div class="singleComment__left">
+                <img class="singleComment__avatar" src="src/img/svg/man.svg"/>
             </div>
 
-            <div class="story-comments__single-comment_right">
-              <div class="story-comments__single-comment_name">Lucas Jones</div>
-              <div class="story-comments__single-comment_text">
+            <div class="singleComment__right">
+              <div class="singleComment__name">Lucas Jones</div>
+              <div class="singleComment__text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna
                   aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -223,8 +223,8 @@
                   deserunt mollit anim id est laborum.
                 </p>
               </div>
-              <div class="story-comments__single-comment_reply">
-                <a class="reply-link" href="">Reply</a>
+              <div class="singleComment__reply">
+                <a class="singleComment__reply_link" href="">Reply</a>
               </div>
             </div>
           </div>
@@ -233,57 +233,61 @@
 
 <!-- Show more comment button-->
 
-        <div class="story-comments__show-more">
-          <button class="show-more_button">Show More Comments</button>
+        <div class="showMore">
+          <button class="showMore_button">Show More Comments</button>
         </div>
 
       </div>
 
-<!-- End of story-comments -->
+<!-- End of storyComments -->
 
 <!-- Start Post a comment form -->
 
-      <div class="section-form">
-        <form class="send-reply" name="send-reply" action="">
-          <h2 class="section-form__name">Post A Comment</h2>
+      <div class="form">
+        <form class="sendReply" name="send-reply" action="">
+          <h2 class="sendReply__name">Post A Comment</h2>
 
 <!--     Input Users Names         -->
 
-          <div class="section-form__name-block">
-            <label class="label label-for-user-name" for="user-name">
+          <div class="form__userNameBlock">
+
+            <label class="form__userNameBlock_text label" for="user-name">
               Use Your Real Name
             </label>
-            <input class="section-form_input  section-form__user-name"
+            <input class="form__input form__userNameBlock_inputUsersName"
             type="text" id="user-name" name="user-name" placeholder="Name" />
 
           </div>
 
 <!--     Input Users E-mails         -->
 
-          <div class="section-form__email-block">
+          <div class="form__userEmailBlock">
 
-            <label class="label label-for-user-email" for="user-email">
+            <label class="form__userEmailBlock_text  label" for="user-email">
               Email will not published
             </label>
-            <input class="section-form_input  section-form__user-email"
+            <input class="form__input  form__userEmailBlock_inputUsersEmail"
             type="email" id="user-email" name="user-email" placeholder="Email" />
+
           </div>
 
 <!--     Input Users Comments (text)         -->
 
-          <div class="section-form__comment-block">
-            <label class="label label-for-user-comment" for="user-comment">
+          <div class="form__commentBlock">
+
+            <label class="form__commentBlock_text  label" for="user-comment">
               Write a good comment
             </label>
-            <textarea class="section-form_input  section-form__user-comment"
+            <textarea class="form__input  form__commentBlock_inputUsersComment"
             id="user-comment" name="user-comment" placeholder="Comments" ></textarea>
+
           </div>
 
 
 <!--    Button   POST    -->
 
-          <div class="section-form__send-post">
-            <button class="section-form__send-post_button">Post Comment</button>
+          <div class="form__sendPost">
+            <button class="form__sendPost_button">Post Comment</button>
           </div>
         </form>
       </div>
@@ -291,12 +295,12 @@
 <!-- End Post a comment form -->
 
       <footer class="footer">
-        <div class="footer__reference">
-          <div class="footer__info  footer__copyright">
-            Copyrights &#169; <span class="footer__important">Fikristudio</span> 2014
+        <div class="footer-reference">
+          <div class="footer-reference__info  footer-reference__copyright">
+            Copyrights &#169; <span class="footer-reference__important">Fikristudio</span> 2014
           </div>
-          <div class="footer__info  footer__page-proofs">
-            Page layout by <a href="https://vk.com/id13259454" target="_blank" class="footer__important">Anastasia Savina</a> 2017
+          <div class="footer-reference__info  footer-reference__page-proofs">
+            Page layout by <a href="https://vk.com/id13259454" target="_blank" class="footer-reference__important">Anastasia Savina</a> 2017
           </div>
         </div>
       </footer>

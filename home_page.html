@@ -7,20 +7,20 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__background"></div>
+    <div class="header_background"></div>
   </header>
 
   <nav class="navigation">
-    <div class="container navigation-container">
-      <ul class="navigation_menu">
+    <div class="navigation-container container">
+      <ul class="navigation__menu">
         <li class="navigation__item  navigation__item_home">
           <a class="navigation__link  navigation__link_home" href="">Home</a>
         </li>
         <li class="navigation__item navigation__item_about">
           <a class="navigation__link  navigation__link_about" href="">About</a>
         </li>
-        <li class="navigation__item logo">
-          <svg width="225px" height="225px" >
+        <li class="navigation__item navigation__item_logo">
+          <svg class="logo-image" width="225px" height="225px" >
             <!-- Background -->
             <circle r="105" cx="50%" cy="50%" fill="#ffffff"/>
             <circle r="97" cx="50%" cy="50%" fill="#3eb3a5"/>
@@ -88,10 +88,10 @@
 
           <ul class="navigation__submenu">
             <li class="navigation__submenu_cat">
-              <a class="navigation__submenu_cat-link" href="" >Diary</a>
+              <a class="navigation__submenu_link" href="" >Diary</a>
             </li>
             <li class="navigation__submenu_cat">
-              <a class="navigation__submenu_cat-link" href="" >Personal</a>
+              <a class="navigation__submenu_link" href="" >Personal</a>
             </li>
           </ul>
         </li>
@@ -100,187 +100,173 @@
         </li>
       </ul>
     </div>
-    <div class="grey-line"></div>
+    <div class="navigation__grey-line"></div>
   </nav>
-  <main class="main-block">
+  <main class="mainBlock">
     <div class="container">
       <div class="welcome-phrase">
         <span class="welcome-phrase_hello">Hello, Welcome to my Blog!</span>
       </div>
       <!-- First post -->
-      <div class="post">
-        <div class="post__content-wrapp">
-          <div class="post__content_left">
-            <div class="post__date">
-              <span class="post__date_text">31 Jul</span>
+      <div class="post post_content-wrapper">
+        <div class="post__content_left">
+          <div class="post__date">
+            <span class="post__date_text">31 Jul</span>
+          </div>
+        </div>
+        <div class="post__content_right">
+          <div class="post__topInfo">
+            <div class="post__topInfo_item  post__topInfo_cat">
+              <span class="post__topInfo_category">cat :</span>
+              <a href="" class="post__topInfo_cstegoryName">Diary,</a>
+              <a href="" class="post__topInfo_cstegoryName">Personal</a>
+            </div>
+            <div class="post__topInfo_item  post__topInfo_likes">
+              <img class="likes_logo" src="src/img/svg/heart.svg"/>
+              <span class="likes_text">136 Likes</span>
+            </div>
+            <div class="post__topInfo_item  post__topInfo_comments">
+              <img class="comments_logo" src="src/img/svg/chat.svg"/>
+              <span class="comments_text">21 Comments</span>
             </div>
           </div>
-          <div class="post__content_right">
-            <div class="post__topInfo">
-              <div class="post__topInfo_item  post__topInfo_cat">
-                <span class="post__topInfo_category">cat :</span>
-                <a href="" class="post__topInfo_cstegoryName">Diary,</a>
-                <a href="" class="post__topInfo_cstegoryName">Personal</a>
-              </div>
-              <div class="post__topInfo_item  post__topInfo_likes">
-                <img class="likes_logo" src="src/img/svg/heart.svg"/>
-                <span class="likes_text">136 Likes</span>
-              </div>
-              <div class="post__topInfo_item  post__topInfo_comments">
-                <img class="comments_logo" src="src/img/svg/chat.svg"/>
-                <span class="comments_text">21 Comments</span>
-              </div>
-            </div>
-            <h2 class="post__name">Lorem Ipsum Dolor Sit Amet</h2>
-            <p class="post__text">Lorem ipsum dolor sit amet, consectetur
-               adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-               exercitation ullamco laboris nisi ut aliquip ex ea commodo
-               consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                sint occaecat cupidatat non proident, sunt in culpa qui officia
-                 deserunt mollit anim id est laborum.</p>
-            <a class="post__read-more" href="" >Read More</a>
-          </div>
+          <h2 class="post__name">Lorem Ipsum Dolor Sit Amet</h2>
+          <p class="post__text">Lorem ipsum dolor sit amet, consectetur
+             adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+             exercitation ullamco laboris nisi ut aliquip ex ea commodo
+             consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+              sint occaecat cupidatat non proident, sunt in culpa qui officia
+               deserunt mollit anim id est laborum.</p>
+          <a class="post__read-more" href="" >Read More</a>
         </div>
       </div>
 
       <!-- Second post -->
 
-      <div class="post">
-        <div class="post__content-wrapp">
-          <div class="post__content_left">
-            <div class="post__date">
-              <span class="post__date_text">31 Jul</span>
+      <div class="post post_content-wrapper">
+        <div class="post__content_left">
+          <div class="post__date">
+            <span class="post__date_text">31 Jul</span>
+          </div>
+        </div>
+        <div class="post__content_right">
+          <div class="post__topInfo">
+            <div class="post__topInfo_item  post__topInfo_cat">
+              <span class="post__topInfo_category">cat :</span>
+              <a href="" class="post__topInfo_cstegoryName">Diary,</a>
+              <a href="" class="post__topInfo_cstegoryName">Personal</a>
+            </div>
+            <div class="post__topInfo_item  post__topInfo_likes">
+              <img class="likes_logo" src="src/img/svg/heart.svg"/>
+              <span class="likes_text">136 Likes</span>
+            </div>
+            <div class="post__topInfo_item  post__topInfo_comments">
+              <img class="comments_logo" src="src/img/svg/chat.svg"/>
+              <span class="comments_text">21 Comments</span>
             </div>
           </div>
-          <div class="post__content_right">
-            <div class="post__topInfo">
-              <div class="post__topInfo_item  post__topInfo_cat">
-                <span class="post__topInfo_category">cat :</span>
-                <a href="" class="post__topInfo_cstegoryName">Diary,</a>
-                <a href="" class="post__topInfo_cstegoryName">Personal</a>
-              </div>
-              <div class="post__topInfo_item  post__topInfo_likes">
-                <img class="likes_logo" src="src/img/svg/heart.svg"/>
-                <span class="likes_text">136 Likes</span>
-              </div>
-              <div class="post__topInfo_item  post__topInfo_comments">
-                <img class="comments_logo" src="src/img/svg/chat.svg"/>
-                <span class="comments_text">21 Comments</span>
-              </div>
-            </div>
-            <h2 class="post__name">Lorem Ipsum Dolor Sit Amet</h2>
-            <p class="post__text">Lorem ipsum dolor sit amet, consectetur
-               adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-               exercitation ullamco laboris nisi ut aliquip ex ea commodo
-               consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                sint occaecat cupidatat non proident, sunt in culpa qui officia
-                 deserunt mollit anim id est laborum.</p>
-            <a class="post__read-more" href="" >Read More</a>
-          </div>
+          <h2 class="post__name">Lorem Ipsum Dolor Sit Amet</h2>
+          <p class="post__text">Lorem ipsum dolor sit amet, consectetur
+             adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+             exercitation ullamco laboris nisi ut aliquip ex ea commodo
+             consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+              sint occaecat cupidatat non proident, sunt in culpa qui officia
+               deserunt mollit anim id est laborum.</p>
+          <a class="post__read-more" href="" >Read More</a>
         </div>
       </div>
 
       <!-- Therd post -->
 
-      <div class="post">
-        <div class="post__content-wrapp">
-          <div class="post__content_left">
-            <div class="post__date">
-              <span class="post__date_text">31 Jul</span>
+      <div class="post post_content-wrapper">
+        <div class="post__content_left">
+          <div class="post__date">
+            <span class="post__date_text">31 Jul</span>
+          </div>
+        </div>
+        <div class="post__content_right">
+          <div class="post__topInfo">
+            <div class="post__topInfo_item  post__topInfo_cat">
+              <span class="post__topInfo_category">cat :</span>
+              <a href="" class="post__topInfo_cstegoryName">Diary,</a>
+              <a href="" class="post__topInfo_cstegoryName">Personal</a>
+            </div>
+            <div class="post__topInfo_item  post__topInfo_likes">
+              <img class="likes_logo" src="src/img/svg/heart.svg"/>
+              <span class="likes_text">136 Likes</span>
+            </div>
+            <div class="post__topInfo_item  post__topInfo_comments">
+              <img class="comments_logo" src="src/img/svg/chat.svg"/>
+              <span class="comments_text">21 Comments</span>
             </div>
           </div>
-          <div class="post__content_right">
-            <div class="post__topInfo">
-              <div class="post__topInfo_item  post__topInfo_cat">
-                <span class="post__topInfo_category">cat :</span>
-                <a href="" class="post__topInfo_cstegoryName">Diary,</a>
-                <a href="" class="post__topInfo_cstegoryName">Personal</a>
-              </div>
-              <div class="post__topInfo_item  post__topInfo_likes">
-                <img class="likes_logo" src="src/img/svg/heart.svg"/>
-                <span class="likes_text">136 Likes</span>
-              </div>
-              <div class="post__topInfo_item  post__topInfo_comments">
-                <img class="comments_logo" src="src/img/svg/chat.svg"/>
-                <span class="comments_text">21 Comments</span>
-              </div>
-            </div>
-            <h2 class="post__name">Lorem Ipsum Dolor Sit Amet</h2>
-            <p class="post__text">Lorem ipsum dolor sit amet, consectetur
-               adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-               exercitation ullamco laboris nisi ut aliquip ex ea commodo
-               consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                sint occaecat cupidatat non proident, sunt in culpa qui officia
-                 deserunt mollit anim id est laborum.</p>
-            <a class="post__read-more" href="" >Read More</a>
-          </div>
+          <h2 class="post__name">Lorem Ipsum Dolor Sit Amet</h2>
+          <p class="post__text">Lorem ipsum dolor sit amet, consectetur
+             adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+             exercitation ullamco laboris nisi ut aliquip ex ea commodo
+             consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+              sint occaecat cupidatat non proident, sunt in culpa qui officia
+               deserunt mollit anim id est laborum.</p>
+          <a class="post__read-more" href="" >Read More</a>
         </div>
       </div>
 
       <!-- Four post -->
 
-      <div class="post">
-        <div class="post__content-wrapp">
-          <div class="post__content_left">
-            <div class="post__date">
-              <span class="post__date_text">31 Jul</span>
+      <div class="post post_content-wrapper">
+        <div class="post__content_left">
+          <div class="post__date">
+            <span class="post__date_text">31 Jul</span>
+          </div>
+        </div>
+        <div class="post__content_right">
+          <div class="post__topInfo">
+            <div class="post__topInfo_item  post__topInfo_cat">
+              <span class="post__topInfo_category">cat :</span>
+              <a href="" class="post__topInfo_cstegoryName">Diary,</a>
+              <a href="" class="post__topInfo_cstegoryName">Personal</a>
+            </div>
+            <div class="post__topInfo_item  post__topInfo_likes">
+              <img class="likes_logo" src="src/img/svg/heart.svg"/>
+              <span class="likes_text">136 Likes</span>
+            </div>
+            <div class="post__topInfo_item  post__topInfo_comments">
+              <img class="comments_logo" src="src/img/svg/chat.svg"/>
+              <span class="comments_text">21 Comments</span>
             </div>
           </div>
-          <div class="post__content_right">
-            <div class="post__topInfo">
-              <div class="post__topInfo_item  post__topInfo_cat">
-                <span class="post__topInfo_category">cat :</span>
-                <a href="" class="post__topInfo_cstegoryName">Diary,</a>
-                <a href="" class="post__topInfo_cstegoryName">Personal</a>
-              </div>
-              <div class="post__topInfo_item  post__topInfo_likes">
-                <img class="likes_logo" src="src/img/svg/heart.svg"/>
-                <span class="likes_text">136 Likes</span>
-              </div>
-              <div class="post__topInfo_item  post__topInfo_comments">
-                <img class="comments_logo" src="src/img/svg/chat.svg"/>
-                <span class="comments_text">21 Comments</span>
-              </div>
-            </div>
-            <h2 class="post__name">Lorem Ipsum Dolor Sit Amet</h2>
-            <p class="post__text">Lorem ipsum dolor sit amet, consectetur
-               adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-               exercitation ullamco laboris nisi ut aliquip ex ea commodo
-               consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                sint occaecat cupidatat non proident, sunt in culpa qui officia
-                 deserunt mollit anim id est laborum.</p>
-            <a class="post__read-more" href="" >Read More</a>
-          </div>
+          <h2 class="post__name">Lorem Ipsum Dolor Sit Amet</h2>
+          <p class="post__text">Lorem ipsum dolor sit amet, consectetur
+             adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+             exercitation ullamco laboris nisi ut aliquip ex ea commodo
+             consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+              sint occaecat cupidatat non proident, sunt in culpa qui officia
+               deserunt mollit anim id est laborum.</p>
+          <a class="post__read-more" href="" >Read More</a>
         </div>
       </div>
       <!-- End of post -->
 
       <footer class="footer">
         <button class="footer__button">Load More</button>
-        <div class="footer__reference">
-          <div class="footer__info  footer__copyright">
-            Copyrights &#169; <span class="footer__important">Fikristudio</span> 2014
+        <div class="footer-reference">
+          <div class="footer-reference__info  footer-reference__copyright">
+            Copyrights &#169; <span class="footer-reference__important">Fikristudio</span> 2014
           </div>
-          <div class="footer__info  footer__page-proofs">
-            Page layout by <a href="https://vk.com/id13259454" target="_blank" class="footer__important">Anastasia Savina</a> 2017
+          <div class="footer-reference__info  footer-reference__page-proofs">
+            Page layout by <a href="https://vk.com/id13259454" target="_blank" class="footer-reference__important">Anastasia Savina</a> 2017
           </div>
         </div>
       </footer>
     </div>
   </main>
-
-
-
-
-
-
 </body>
 </html>

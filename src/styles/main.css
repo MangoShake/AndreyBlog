@@ -53,7 +53,7 @@ textarea {
   left: 0;
 }
 
-.header__background {
+.header_background {
   width: 100%;
   height: 100%;
   background: url('../img/background.jpg') 0 5% no-repeat / cover;
@@ -74,13 +74,13 @@ textarea {
   margin-top: 230px;
 }
 
-.navigation_menu {
+.navigation__menu {
   margin: 0 0 -5px 0;
   padding: 5px;
   position: relative;
 }
 
-.logo {
+.navigation__item_logo {
   vertical-align: -70px;
   height: auto;
 }
@@ -128,7 +128,7 @@ textarea {
   margin: -10px 0 0 -12px;
 }
 
-.navigation__submenu_cat-link {
+.navigation__submenu_link {
   color: inherit;
 }
 
@@ -146,7 +146,7 @@ li.navigation__submenu_cat:hover {
   display: block;
 }
 
-.grey-line {
+.navigation__grey-line {
   margin: -38px 0 0 0;
   border-top: 1px solid rgb(223, 223, 223);
 }
@@ -183,11 +183,7 @@ li.navigation__submenu_cat:hover {
 
 /* Styles for post of home page */
 
-.post {
-  width: auto;
-}
-
-.post__content-wrapp {
+.post_content-wrapper {
   width: auto;
   margin: 0 0 45px 0;
   padding-bottom: 45px;
@@ -332,12 +328,12 @@ li.navigation__submenu_cat:hover {
 
 /* Style ONLY for single page properties */
 
-.single-post {
+.singlePost {
   width: auto;
   margin-top: 50px;
 }
 
-.single-post__content-wrapp {
+.singlePost__content-wrapper {
   width: auto;
   margin: 0 0 45px 0;
   padding-bottom: 45px;
@@ -345,36 +341,36 @@ li.navigation__submenu_cat:hover {
   border-bottom: 1px solid rgb(235, 235, 235);
 }
 
-.single-post_photo {
+.singlePost__photo {
   max-width: 100%;
   height: auto;
   text-align: center;
 }
 
-.single-post_image {
+.singlePost__image {
   max-width: 100%;
   height: auto;
 }
 
 /* Comments single page */
 
-.story-comments__header {
+.storyComments__header {
   border-bottom: 2px solid rgb(230, 230, 230);
   padding: 0 0 45px;
   margin: 0 0 70px;
 }
 
-.story-comments__header_quantity,
-.story-comments__header_next-story {
+.storyComments__header_quantity,
+.storyComments__header_next-story {
   display: inline-block;
   width: auto;
 }
 
-.story-comments__header_next-story {
+.storyComments__header_next-story {
   margin: 0 0 0 68%;
 }
 
-.story-comments__header_span-quantity {
+.storyComments__header_span-quantity {
   color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: bold;
@@ -400,26 +396,26 @@ li.navigation__submenu_cat:hover {
 
 /* Comments-comments single page */
 
-.story-comments {
+.storyComments {
   border-bottom: 1px solid rgb(230, 230, 230);
 }
 
-.story-comments__single-comment {
+.singleComment {
   margin: 0 0 70px;
 }
 
-.story-comments__single-comment_left,
-.story-comments__single-comment_right {
+.singleComment__left,
+.singleComment__right {
   display: inline-block;
 }
 
-.story-comments__single-comment_left {
+.singleComment__left {
   float: left;
   margin: 0 15px;
   width: auto;
 }
 
-.story-comments__single-comment_avatar {
+.singleComment__avatar {
   width: 110px;
   height: 110px;
   border: 5px solid rgba(142, 142, 142, 0.25);
@@ -427,43 +423,43 @@ li.navigation__submenu_cat:hover {
   padding: 1px;
 }
 
-.story-comments__single-comment_right {
+.singleComment__right {
   width: 80%;
   margin: 40px 0 0;
 }
 
-.story-comments__single-comment_name {
+.singleComment__name {
   color: rgb(62, 179, 165);
   font-size: 22px;
   font-weight: 800;
 }
 
-.story-comments__single-comment_text {
+.singleComment__text {
   background-color: rgb(235, 235, 235);
   padding: 10px 15px;
   margin: 20px 0;
 }
 
-.story-comments__single-comment_text > p {
+.singleComment__text > p {
   margin: 0;
 }
 
-.reply-link {
+.singleComment__reply_link {
   color: rgb(62, 179, 165);
   font-size: 16px;
   padding: 5px;
   margin: 0 0 0 15px;
 }
 
-.reply-link:hover {
+.singleComment__reply_link:hover {
   border-bottom: 1px solid;
 }
 
-.story-comments__show-more {
+.showMore {
   text-align: center;
 }
 
-.show-more_button {
+.showMore_button {
   padding: 10px 15px;
   margin: 0 0 35px;
   background-color: rgb(62, 179, 165);
@@ -482,7 +478,7 @@ li.navigation__submenu_cat:hover {
 
 /* Form single page */
 
-.send-reply {
+.sendReply {
   text-align: center;
   padding-bottom: 35px;
   margin: 35px auto 20px;
@@ -490,7 +486,7 @@ li.navigation__submenu_cat:hover {
   width: 795px;
 }
 
-.section-form__name {
+.sendReply__name {
   text-align: center;
   color: rgb(0, 0, 0);
   font-size: 24px;
@@ -498,19 +494,19 @@ li.navigation__submenu_cat:hover {
   letter-spacing: 0.03rem;
 }
 
-.section-form__name-block {
+.form__userNameBlock {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
 }
 
-.section-form__email-block {
+.form__userEmailBlock {
   display: inline-flex;
   flex-direction: row-reverse;
   align-items: center;
 }
 
-.section-form_input {
+.form__input {
   font: 16px 'Rockwell';
   color: rgb(136, 139, 139);
   background-color: rgb(235, 235, 235);
@@ -520,17 +516,17 @@ li.navigation__submenu_cat:hover {
   margin: 10px;
 }
 
-.section-form__user-name,
-.section-form__user-email {
+.form__userNameBlock_inputUsersName,
+.form__userEmailBlock_inputUsersEmail {
   width: 150px;
   height: 20px;
 }
 
-.section-form__comment-block {
+.form__commentBlock {
   text-align: left;
 }
 
-.section-form__user-comment {
+.form__commentBlock_inputUsersComment {
   width: 365px;
   height: 195px;
   margin: 10px 0 20px 11px;
@@ -542,12 +538,12 @@ li.navigation__submenu_cat:hover {
   font-weight: bold;
 }
 
-.label-for-user-comment {
+.form__commentBlock_text {
   float: left;
   margin-top: 25px;
 }
 
-.section-form__send-post_button {
+.form__sendPost_button {
   width: 210px;
   padding: 10px 15px;
   background-color: rgb(62, 179, 165);
@@ -571,7 +567,7 @@ li.navigation__submenu_cat:hover {
   padding: 0 0 25px 0;
 }
 
-.footer__reference {
+.footer-reference {
   opacity: 0.55;
 }
 
@@ -592,18 +588,18 @@ li.navigation__submenu_cat:hover {
   cursor: pointer;
 }
 
-.footer__info {
+.footer-reference__info {
   padding: 10px;
   margin: 10px;
   font-size: 14px;
   font-weight: 600;
 }
 
-.footer__important {
+.footer-reference__important {
   color: rgb(62, 179, 165);
 }
 
-a.footer__important:hover {
+a.footer-reference__important:hover {
   border-bottom: 1px dotted rgb(62, 179, 165);
 }
 
@@ -633,7 +629,7 @@ a.footer__important:hover {
     margin-top: 115px;
   }
 
-  .navigation_menu {
+  .navigation__menu {
     width: 740px;
     margin: auto;
   }
@@ -648,7 +644,7 @@ a.footer__important:hover {
     margin: 0;
   }
 
-  .logo {
+  .navigation__item_logo {
     vertical-align: -70px;
     height: auto;
     width: 245px;
@@ -694,28 +690,28 @@ a.footer__important:hover {
     border: 3px solid rgba(142, 142, 142, 0.4);
   }
 
-  .story-comments__single-comment_left {
+  .storyComments__single-comment_left {
     margin: 0 5px 0 0;
   }
 
-  .story-comments__single-comment_right {
+  .singleComment__right {
     margin: 10px 0;
   }
 
-  .reply-link {
+  .singleComment__reply_link {
     margin: 0;
   }
 
-  .story-comments__header_next-story {
+  .storyComments__header_next-story {
     margin: 0 0 0 50%;
   }
 
-  .section-form__email-block,
-  .section-form__name-block {
+  .form__userEmailBlock,
+  .form__userNameBlock {
     display: block;
   }
 
-  .section-form__user-name {
+  .form__userNameBlock_inputUsersName {
     margin-left: 40px;
   }
 
@@ -748,11 +744,11 @@ a.footer__important:hover {
     height: auto;
   }
 
-  .grey-line {
+  .navigation__grey-line {
     display: none;
   }
 
-  .navigation_menu {
+  .navigation__menu {
     text-align: center;
   }
 
@@ -781,7 +777,7 @@ a.footer__important:hover {
     border-bottom: none;
   }
 
-  .logo {
+  .navigation__item_logo {
     position: absolute;
     top: -10px;
     left: -400px;
@@ -804,7 +800,7 @@ a.footer__important:hover {
     text-align: center;
   }
 
-  a.navigation__submenu_cat-link {
+  a.navigation__submenu_link {
     width: auto;
     padding: 5px 50px;
   }
@@ -882,23 +878,23 @@ a.footer__important:hover {
     width: 95px;
   }
 
-  .story-comments__single-comment_left {
+  .storyComments__single-comment_left {
     margin: 0 5px 0 0;
   }
 
-  .story-comments__single-comment_right {
+  .singleComment__right {
     margin: 10px 0;
   }
 
-  .reply-link {
+  .singleComment__reply_link {
     margin: 0;
   }
 
-  .story-comments__header {
+  .storyComments__header {
     text-align: center;
   }
 
-  .story-comments__header_next-story {
+  .storyComments__header_next-story {
     margin: 25px 0;
     display: block;
   }
@@ -914,18 +910,18 @@ a.footer__important:hover {
     margin-right: 0;
   }
 
-  .section-form__email-block,
-  .section-form__name-block {
+  .form__userEmailBlock,
+  .form__userNameBlock {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .section-form__user-comment {
+  .form__commentBlock_inputUsersComment {
     width: 95%;
   }
 
-  .story-comments__single-comment_avatar {
+  .singleComment__avatar {
     width: 80px;
     height: 80px;
   }
@@ -940,7 +936,7 @@ a.footer__important:hover {
     margin: 20px 20px 55px 20px;
   }
 
-  .footer__info {
+  .footer-reference__info {
     padding: 0;
   }
 }
